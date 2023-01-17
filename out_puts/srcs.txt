@@ -1,0 +1,27 @@
+1-length
+https://www.interviewkickstart.com/learn/length-vs-length-method
+
+2- string At char 
+https://www.w3schools.com/java/ref_string_charat.asp
+
+
+
+3-  to string
+https://www.educative.io/answers/how-to-use-the-tostring-in-java
+
+
+4- stringChar()
+https://www.educative.io/answers/what-is-the-stringchars-method-in-java
+
+
+5- Instream char()
+https://stackoverflow.com/users/signup?ssrc=hero&returnurl=https%3a%2f%2fstackoverflow.com%2fquestions%2f22435833%2fwhy-is-string-chars-a-stream-of-ints-in-java-8
+https://www.educative.io/answers/what-is-the-stringchars-method-in-java
+
+6-Instream codepoints()
+https://www.geeksforgeeks.org/intstream-codepoints-method-in-java-with-examples/
+
+7- Compare()
+
+
+

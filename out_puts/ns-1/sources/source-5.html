@@ -1,0 +1,153 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <title>Coverage Report > Driver</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/highlight-idea.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">com.charseqfunctions</a>
+</div>
+
+<h1>Coverage Summary for Class: Driver (com.charseqfunctions)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">Driver</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/2)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/27)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<div class="sourceCode" id="sourceCode"><i class="no-highlight">1</i>&nbsp;package com.charseqfunctions;
+<i class="no-highlight">2</i>&nbsp;
+<i class="no-highlight">3</i>&nbsp;import java.util.stream.IntStream;
+<i class="no-highlight">4</i>&nbsp;
+<b class="nc"><i class="no-highlight">5</i>&nbsp;public class Driver {</b>
+<i class="no-highlight">6</i>&nbsp;
+<i class="no-highlight">7</i>&nbsp;    public static void main (String[] args) throws IndexOutOfBoundsException
+<i class="no-highlight">8</i>&nbsp;    {
+<b class="nc"><i class="no-highlight">9</i>&nbsp;        LengthMethod lm =new LengthMethod(); //instance of Class LengthMethod</b>
+<b class="nc"><i class="no-highlight">10</i>&nbsp;        int noChars= lm.ReturnLength(&quot;Alexandria&quot;); // to save the returened value from func</b>
+<b class="nc"><i class="no-highlight">11</i>&nbsp;        System.out.println(&quot;the number of chars in word is : &quot;+noChars); // demonstarte its working</b>
+<i class="no-highlight">12</i>&nbsp;
+<b class="nc"><i class="no-highlight">13</i>&nbsp;        CharAtMethod cm= new CharAtMethod(); // instance of Class CharAtMethod</b>
+<b class="nc"><i class="no-highlight">14</i>&nbsp;        char chatAtResult= cm.charAtMethod(0,&quot;Hello&quot;); // to save the returened value from func</b>
+<b class="nc"><i class="no-highlight">15</i>&nbsp;        System.out.println(&quot;the character at the entered index is :&quot;+chatAtResult); // demonstarte its working</b>
+<i class="no-highlight">16</i>&nbsp;
+<b class="nc"><i class="no-highlight">17</i>&nbsp;        CharesequenceMethod csqM= new CharesequenceMethod();</b>
+<b class="nc"><i class="no-highlight">18</i>&nbsp;        CharSequence charsqResutls= csqM.charSequenceMethod(1,3,&quot;hello&quot;);</b>
+<b class="nc"><i class="no-highlight">19</i>&nbsp;        System.out.println(&quot;the subsq word  between  the entered index is :&quot;+charsqResutls);</b>
+<i class="no-highlight">20</i>&nbsp;
+<i class="no-highlight">21</i>&nbsp;        //demonstration of toString working
+<b class="nc"><i class="no-highlight">22</i>&nbsp;        ToStringMethods str=new ToStringMethods();</b>
+<b class="nc"><i class="no-highlight">23</i>&nbsp;        str.setName(&quot;xyz&quot;); //3rd method</b>
+<b class="nc"><i class="no-highlight">24</i>&nbsp;        str.setAge(23);</b>
+<b class="nc"><i class="no-highlight">25</i>&nbsp;        str.PrintPersonData();</b>
+<b class="nc"><i class="no-highlight">26</i>&nbsp;        str.SecondUsagetoString(12,10.5, 123213123L,false); //2ndmethod</b>
+<b class="nc"><i class="no-highlight">27</i>&nbsp;        str.firstUsagetoString(29); //1st Method</b>
+<i class="no-highlight">28</i>&nbsp;
+<i class="no-highlight">29</i>&nbsp;        //demonstration of  Instream chars() working
+<b class="nc"><i class="no-highlight">30</i>&nbsp;        charInstreamMethods chim =new charInstreamMethods();</b>
+<b class="nc"><i class="no-highlight">31</i>&nbsp;        IntStream chimStream=chim.charintStreamMethod(&quot;HyperActive&quot;);</b>
+<b class="nc"><i class="no-highlight">32</i>&nbsp;        System.out.println(&quot;char values are \n&quot;);</b>
+<b class="nc"><i class="no-highlight">33</i>&nbsp;        chimStream.mapToObj(Character::toChars).forEach(System.out::println);</b>
+<i class="no-highlight">34</i>&nbsp;
+<i class="no-highlight">35</i>&nbsp;        // demonstration of InstreamCodepoints()
+<b class="nc"><i class="no-highlight">36</i>&nbsp;        CodePointInstreamMethod cpim=new CodePointInstreamMethod();</b>
+<b class="nc"><i class="no-highlight">37</i>&nbsp;        IntStream cpimStream = cpim.codePointsintStreamMethod(&quot;HyperActive&quot;);</b>
+<b class="nc"><i class="no-highlight">38</i>&nbsp;        System.out.println(&quot;ASCII Values are: &quot;);</b>
+<i class="no-highlight">39</i>&nbsp;        // Print the code points
+<b class="nc"><i class="no-highlight">40</i>&nbsp;        cpimStream.forEach(System.out::println);</b>
+<i class="no-highlight">41</i>&nbsp;
+<i class="no-highlight">42</i>&nbsp;// usage of compare method
+<b class="nc"><i class="no-highlight">43</i>&nbsp;        CompareMethodUsage cmpmth= new CompareMethodUsage();</b>
+<b class="nc"><i class="no-highlight">44</i>&nbsp;      int resultofcmp=  cmpmth.compareMethodUsage(&quot;Ace&quot;,&quot;Asd&quot;);</b>
+<b class="nc"><i class="no-highlight">45</i>&nbsp;      cmpmth.printStatus(resultofcmp);</b>
+<i class="no-highlight">46</i>&nbsp;
+<i class="no-highlight">47</i>&nbsp;    }
+<i class="no-highlight">48</i>&nbsp;}
+</div>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+        var codeBlock = document.getElementById('sourceCode');
+
+        if (codeBlock) {
+            hljs.highlightBlock(codeBlock);
+        }
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-01-06 05:19</div>
+</div>
+</body>
+</html>
